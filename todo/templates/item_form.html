@@ -14,12 +14,7 @@
         
         {% csrf_token %}
         
-        <label for="id_name">Name:</label><br>
-        <input type="text" name="name" id="id_name"/><br>
-        <br>
-        <label for="id_done">Done:</label><br>
-        <input type="checkbox" name="done" id="id_done"/><br>
-        <br>
+        {{ form.as_p }}
         <button type="submit">Save</button>
         
         
